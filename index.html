@@ -3,15 +3,15 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <title> Justin Kyuhyung Lee </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="mediaqueries.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
         
     </head>
     <body>
-        <nav id="desktop-nav"></nav>
+        <nav id="desktop-nav">
             <div class="logo">Justin Lee</div>
             <div> 
                 <ul class="nav-links"> 
@@ -22,7 +22,28 @@
                 </ul>
             </div>
         </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Justin Lee</div>
+            <div class="hamburger-menu"> 
+                <div class="hamburger-icon" onclick="toggleMenu()"> 
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
 
+        </nav>
+        <section id="profile"> 
+            <div class="section__pic-container">
+                <img src="./assets/jklpropic.png" alt="Justin Lee Profile Picture"> 
+            </div>
+        </section>
         <script src="script.js">
 
 
