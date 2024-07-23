@@ -276,6 +276,7 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  margin-top: 0; 
 }
 
 .about-containers,
@@ -304,6 +305,8 @@ section {
 }
 
 .section-container {
+  display: flex;
+  align-items: flex-start;
   gap: 4rem;
   height: 80%;
 }
@@ -311,7 +314,6 @@ section {
 .section__pic-container {
   height: 400px;
   width: 400px;
-  margin: auto 0;
 }
 
 /* Experience Section */
@@ -405,3 +407,4 @@ footer {
 footer p {
     text-align: center;
 }
+
